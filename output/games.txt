@@ -1,0 +1,297 @@
++---------+--------------------------------------------------------------------------+
+|  App ID |                                   Name                                   |
++---------+--------------------------------------------------------------------------+
+|    10   |                              Counter-Strike                              |
+|    80   |                      Counter-Strike: Condition Zero                      |
+|   100   |              Counter-Strike: Condition Zero Deleted Scenes               |
+|   300   |                          Day of Defeat: Source                           |
+|    20   |                          Team Fortress Classic                           |
+|    30   |                              Day of Defeat                               |
+|    40   |                            Deathmatch Classic                            |
+|    50   |                        Half-Life: Opposing Force                         |
+|    60   |                                 Ricochet                                 |
+|    70   |                                Half-Life                                 |
+|   130   |                          Half-Life: Blue Shift                           |
+|   220   |                               Half-Life 2                                |
+|   340   |                         Half-Life 2: Lost Coast                          |
+|   240   |                          Counter-Strike: Source                          |
+|   280   |                            Half-Life: Source                             |
+|   360   |                       Half-Life Deathmatch: Source                       |
+|   320   |                         Half-Life 2: Deathmatch                          |
+|   380   |                         Half-Life 2: Episode One                         |
+|   4000  |                               Garry's Mod                                |
+|   6880  |                                Just Cause                                |
+|   400   |                                  Portal                                  |
+|   420   |                         Half-Life 2: Episode Two                         |
+|   500   |                               Left 4 Dead                                |
+|  12200  |                        Bully: Scholarship Edition                        |
+|  13500  |                     Prince of Persia: Warrior Within                     |
+|  17410  |                              Mirror's Edge                               |
+|  15190  |                    Brothers in Arms: Road to Hill 30                     |
+|  15390  |                     Brothers in Arms: Hell's Highway                     |
+|  19800  |                    Brothers in Arms: Earned in Blood                     |
+|   550   |                              Left 4 Dead 2                               |
+|   8190  |                               Just Cause 2                               |
+|  12210  |                Grand Theft Auto IV: The Complete Edition                 |
+|  47870  |                       Need for Speed: Hot Pursuit                        |
+|  50300  |                            Spec Ops: The Line                            |
+|  55100  |                                Homefront                                 |
+|  71230  |                                Crazy Taxi                                |
+|   620   |                                 Portal 2                                 |
+|  105600 |                                 Terraria                                 |
+|  55150  |                      Warhammer 40,000: Space Marine                      |
+|  12100  |                           Grand Theft Auto III                           |
+|  12110  |                       Grand Theft Auto: Vice City                        |
+|  12120  |                      Grand Theft Auto: San Andreas                       |
+|  12230  |                           Grand Theft Auto III                           |
+|  12240  |                       Grand Theft Auto: Vice City                        |
+|  12250  |                      Grand Theft Auto: San Andreas                       |
+|  202200 |               Galactic Civilizations II: Ultimate Edition                |
+|  67370  |                             The Darkness II                              |
+|  105450 |                        Age of Empires® III (2007)                        |
+|  35000  |                               Mini Ninjas                                |
+|  201700 |                              DiRT Showdown                               |
+|  207610 |                             The Walking Dead                             |
+|  49520  |                              Borderlands 2                               |
+|  202970 |                        Call of Duty: Black Ops II                        |
+|  202990 |                 Call of Duty: Black Ops II - Multiplayer                 |
+|  212910 |                   Call of Duty: Black Ops II - Zombies                   |
+|  205100 |                                Dishonored                                |
+|  219950 |                          NiGHTS into Dreams...                           |
+|  214510 |                       LEGO® The Lord of the Rings™                       |
+|  227300 |                          Euro Truck Simulator 2                          |
+|  99900  |                              Spiral Knights                              |
+|  203290 |                     America's Army: Proving Grounds                      |
+|  208090 |                                 Loadout                                  |
+|  218230 |                               PlanetSide 2                               |
+| 1083500 |                           PlanetSide 2 - Test                            |
+|  230410 |                                 Warframe                                 |
+|  236390 |                               War Thunder                                |
+|  272350 |                  Tom Clancy's Ghost Recon Phantoms - EU                  |
+|  209870 |                         Blacklight: Retribution                          |
+|  253710 |                            theHunter Classic                             |
+|  203160 |                               Tomb Raider                                |
+|  232010 |                           Euro Truck Simulator                           |
+|  44350  |                                  GRID 2                                  |
+|  22300  |                                Fallout 3                                 |
+|  242760 |                                The Forest                                |
+|  218620 |                                 PAYDAY 2                                 |
+|  252330 |                           Slender: The Arrival                           |
+|  252490 |                                   Rust                                   |
+|  700580 |                          Rust - Staging Branch                           |
+|  252950 |                              Rocket League                               |
+|  261430 |                            AION Free-to-Play                             |
+|  265930 |                              Goat Simulator                              |
+|  268870 |                             Satellite Reign                              |
+|  269670 |                    BADLAND: Game of the Year Edition                     |
+|  271590 |                            Grand Theft Auto V                            |
+|  278360 |                          A Story About My Uncle                          |
+|  285160 |                            LEGO® The Hobbit™                             |
+|  290930 |                           Half-Life 2: Update                            |
+|  292910 |                      Deponia: The Complete Journey                       |
+|  34830  |                          Sniper: Ghost Warrior                           |
+|  34870  |                          Sniper Ghost Warrior 2                          |
+|  271500 |                          Sniper Art of Victory                           |
+|  307070 |                          Memories of a Vagabond                          |
+|  310560 |                                DiRT Rally                                |
+|  291480 |                                 Warface                                  |
+|  227940 |                            Heroes & Generals                             |
+|  318600 |                          The Flame in the Flood                          |
+|  205790 |                               Dota 2 Test                                |
+|  241930 |                     Middle-earth™: Shadow of Mordor™                     |
+|  307690 |                    Sleeping Dogs: Definitive Edition                     |
+|  238320 |                                 Outlast                                  |
+|  261640 |                       Borderlands: The Pre-Sequel                        |
+|   730   |                     Counter-Strike: Global Offensive                     |
+|  333930 |                                Dirty Bomb                                |
+|  319630 |                             Life is Strange™                             |
+|  339610 |                      FreeStyle 2: Street Basketball                      |
+|  349700 |                                Aftermath                                 |
+|  287290 |                       Resident Evil Revelations 2                        |
+|  353550 |                             House of Caravan                             |
+|  311560 |                          Assassin's Creed Rogue                          |
+|  365670 |                                 Blender                                  |
+|  298180 |                            The Desolate Hope                             |
+|  381210 |                             Dead by Daylight                             |
+|  291550 |                                Brawlhalla                                |
+|  395170 |                        DISTRAINT: Deluxe Edition                         |
+|  234140 |                                 Mad Max                                  |
+|  365450 |                                 Hacknet                                  |
+|  225540 |                               Just Cause 3                               |
+|  414700 |                                Outlast 2                                 |
+|  431960 |                             Wallpaper Engine                             |
+|  440430 |        Life Is Strange™ - Directors' Commentary - 1.Two directors        |
+|  440431 | Life Is Strange™ - Directors' Commentary - 2. Let's play Life is Strange |
+|  440432 |         Life Is Strange™ - Directors' Commentary - 3. Intentions         |
+|  440433 |     Life Is Strange™ - Directors' Commentary - 4. A matter of choice     |
+|  440434 |       Life Is Strange™ - Directors' Commentary - 5. A lively world       |
+|  440435 |    Life Is Strange™ - Directors' Commentary - 6. Capturing the moment    |
+|  440436 |       Life Is Strange™ - Directors' Commentary - 7. Social issues        |
+|  440437 |    Life Is Strange™ - Directors' Commentary - 8. Getting things right    |
+|  440438 |   Life Is Strange™ - Directors' Commentary - 9. Voices of Arcadia Bay    |
+|  433850 |                             Z1 Battle Royale                             |
+|  439700 |                            H1Z1: Test Server                             |
+|  244930 |                                   SNOW                                   |
+|  440730 |                 Survival Zombies The Inverted Evolution                  |
+|  444090 |                                 Paladins                                 |
+|  596350 |                          Paladins - Public Test                          |
+|  365590 |                        Tom Clancy's The Division                         |
+|  524440 |                      Tom Clancy's The Division PTS                       |
+|  375600 |                                Air Brawl                                 |
+|  379720 |                                   DOOM                                   |
+|  302670 |                               Call to Arms                               |
+|  505040 |                                 FORTIFY                                  |
+|  513650 |                               Zula Europe                                |
+|  360430 |                      Mafia III: Definitive Edition                       |
+|  521890 |                              Hello Neighbor                              |
+|   7670  |                                 BioShock                                 |
+|   8850  |                                BioShock 2                                |
+|   8870  |                            BioShock Infinite                             |
+|  409710 |                           BioShock Remastered                            |
+|  409720 |                          BioShock 2 Remastered                           |
+|  489520 |                              Minion Masters                              |
+|  552990 |                            World of Warships                             |
+|  555570 |                          Infestation: The New Z                          |
+|   8500  |                                EVE Online                                |
+|  436520 |                              Line of Sight                               |
+|  578080 |                      PLAYERUNKNOWN'S BATTLEGROUNDS                       |
+|  582500 |                               We Were Here                               |
+|  582660 |                           Black Desert Online                            |
+|  582890 |                         Estranged: The Departure                         |
+|  587650 |                          Half-Life 2: DownFall                           |
+|  601510 |                           Yu-Gi-Oh! Duel Links                           |
+|  559460 |                              Cloud Pirates                               |
+|  646170 |              Half-Life - The Freeman Chronicles: Episode 1               |
+|  646171 |           Half-Life - The Freeman Chronicles: Episode 2 Part 1           |
+|  678350 |                 Half-Life - The Freeman Chronicles: BTS                  |
+|  386180 |                                 Crossout                                 |
+|  424840 |                            Little Nightmares                             |
+|  665360 |                               Comedy Night                               |
+|  674940 |                          Stick Fight: The Game                           |
+|  715980 |                                Eared Hero                                |
+|  15700  |                         Oddworld: Abe's Oddysee                          |
+|  466240 |                                  Deceit                                  |
+|  427460 |                          Battlerite Public Test                          |
+|  504370 |                                Battlerite                                |
+|  755790 |                             Ring of Elysium                              |
+|  772080 |                               Mind Portal                                |
+|  209670 |                              Cortex Command                              |
+|  809960 |                             Radical Heights                              |
+|  236870 |                                 HITMAN™                                  |
+|  57300  |                        Amnesia: The Dark Descent                         |
+|  239200 |                       Amnesia: A Machine for Pigs                        |
+|  823130 |                      Totally Accurate Battlegrounds                      |
+|  203770 |                            Crusader Kings II                             |
+|  845070 |                 The Awesome Adventures of Captain Spirit                 |
+|  232050 |                    Eador. Masters of the Broken World                    |
+|  286570 |                                 F1 2015                                  |
+|  864300 |                                  qop 3                                   |
+|  490220 |                                 Prismata                                 |
+|  13250  |                               Unreal Gold                                |
+|  209080 |                          Guns of Icarus Online                           |
+|  608800 |                         Guns of Icarus Alliance                          |
+|  611500 |                             Quake Champions                              |
+|  882150 |                            Drone Strike Force                            |
+|  884660 |                                  CRSED                                   |
+|  391720 |                              Layers of Fear                              |
+|  63500  |                          Swords and Soldiers HD                          |
+|  892970 |                                 Valheim                                  |
+|  737800 |                                 F1 2018                                  |
+|  769920 |             Odysseus Kosmos and his Robot Quest - Episode 1              |
+|  222880 |                                Insurgency                                |
+|  696370 |                     BROKE PROTOCOL: Online City RPG                      |
+|  304390 |                                For Honor                                 |
+|  654310 |                         For Honor - Public Test                          |
+|  945360 |                                 Among Us                                 |
+|  437220 |                               The Culling                                |
+|  265690 |                                NaissanceE                                |
+|  967050 |                                  Pacify                                  |
+|  43110  |                                Metro 2033                                |
+|  231430 |                           Company of Heroes 2                            |
+|  450390 |                                 The Lab                                  |
+|  728540 |                      Islands of Nyne: Battle Royale                      |
+| 1021950 |                         When the Darkness comes                          |
+|  343710 |                                  KHOLAT                                  |
+| 1029890 |                             Layers of Fear 2                             |
+|  812140 |                         Assassin's Creed Odyssey                         |
+|  911400 |                     Assassin's Creed III Remastered                      |
+|  275390 |               Guacamelee! Super Turbo Championship Edition               |
+|  780800 |                                 Ball laB                                 |
+| 1085660 |                                Destiny 2                                 |
+|  431930 |                                 Kabounce                                 |
+|  226840 |                            Age of Wonders III                            |
+| 1147960 |                                  Okaeri                                  |
+|  522040 |                   Princess Remedy In A Heap of Trouble                   |
+| 1172470 |                               Apex Legends                               |
+|  490860 |                                DashBored                                 |
+|  220820 |                             Zombie Driver HD                             |
+|  418270 |                               Draw Slasher                               |
+|  232770 |                                  POSTAL                                  |
+|  567730 |                             Merry Snowballs                              |
+| 1238840 |                             Battlefield 1 ™                              |
+| 1238860 |                             Battlefield 4™                               |
+|  406970 |                      The Uncertain: Last Quiet Day                       |
+|  555000 |                               GOAT OF DUTY                               |
+|  797410 |                              Headsnatchers                               |
+|  760620 |                                 Deiland                                  |
+|  442070 |                                Drawful 2                                 |
+|  289690 |                   Lara Croft and the Temple of Osiris                    |
+|  588210 |                                 HELLION                                  |
+|  814200 |                           Simple Story - Alex                            |
+|  628950 |                              Nephise Begins                              |
+|  702150 |                             Project Mercury                              |
+|  335190 |                            200% Mixed Juice!                             |
+|  390710 |                         Acceleration of SUGURI 2                         |
+|  282800 |                            100% Orange Juice                             |
+|  420740 |                                 The Deed                                 |
+|  618140 |                                  Barro                                   |
+| 1281930 |                                tModLoader                                |
+|  566190 |                                The Search                                |
+|  379320 |                          Clandestinity of Elsie                          |
+|  350300 |                               Gang of Four                               |
+|  600430 |                      Ticket to Ride: First Journey                       |
+|  699240 |                             Keyboard Killers                             |
+|  348510 |                        Autobahn Police Simulator                         |
+|  640890 |                            Will Glow the Wisp                            |
+|  442120 |                               Pinball FX3                                |
+|  680360 |                             Regions Of Ruin                              |
+|  835950 |                                Transpose                                 |
+| 1078000 |                                Gamecraft                                 |
+|  727020 |                            Arcade Moonlander                             |
+|  368180 |                                 Polyball                                 |
+|  308600 |                                Geneshift                                 |
+|  441380 |                     PAC-MAN™ CHAMPIONSHIP EDITION 2                      |
+|  34330  |                           Total War: SHOGUN 2                            |
+| 1076280 |                             Showdown Bandit                              |
+|  435790 |                            10 Second Ninja X                             |
+|  371140 |                             Aegis Defenders                              |
+|  640590 |                   The LEGO® NINJAGO® Movie Video Game                    |
+|  579110 |                               Interkosmos                                |
+| 1313860 |                           EA SPORTS™ FIFA 21                             |
+| 1048540 |                        Kao the Kangaroo: Round 2                         |
+| 1343400 |                                RuneScape                                 |
+|  242700 |                Injustice: Gods Among Us Ultimate Edition                 |
+| 1368430 |                           Streets Of Kamurocho                           |
+| 1368440 |                             Armor Of Heroes                              |
+| 1368450 |                               Endless Zone                               |
+| 1368460 |                    Golden Axed: A Cancelled Prototype                    |
+|  266310 |                                 GameGuru                                 |
+|  209630 |                          Magrunner: Dark Pulse                           |
+|  919220 |                             Destiny or Fate                              |
+|  532210 |                            Life is Strange 2                             |
+|  465760 |                               Scrap Garden                               |
+|  358270 |                          Death Rally (Classic)                           |
+|  325180 |                            AppGameKit Classic                            |
+| 1238810 |                              Battlefield™ V                              |
+|  34270  |                    SEGA Mega Drive & Genesis Classics                    |
+|  723890 |                             Don't Make Love                              |
+|  368230 |                             Kingdom: Classic                             |
+|  729660 |                    Blackout Z: Slaughterhouse Edition                    |
+|  616560 |                      Ultimate Epic Battle Simulator                      |
+|  619700 |                                Steel Rats                                |
+|  351510 |                                 Quiplash                                 |
+|  435120 |                             Rusty Lake Hotel                             |
+|  94300  |                            The Dream Machine                             |
++---------+--------------------------------------------------------------------------+
+Games of user:76561198111662340
+Games count:291
