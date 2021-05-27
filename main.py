@@ -1,5 +1,5 @@
 import sys
-import source.user as user
+import source.steam as steam
 
 if len(sys.argv) == 1 or len(sys.argv) > 2:
     print("Required argument: username" if len(sys.argv) == 1 else "Only one username can be parsed at a time")
@@ -8,7 +8,7 @@ if len(sys.argv) == 1 or len(sys.argv) > 2:
 
 def main():
     target = sys.argv[1]
-    personName = user.getName(target)
+    personName = steam.getName(target)
     print("Steam OSINT ####### created by Chris")
     print(f"Target: {personName}")
     printMenu()
@@ -18,17 +18,18 @@ def main():
         if answer == "user":
             target = changeUser()
         elif answer == "sum":
-            print(user.summary(target))
+            print(steam.summary(target))
         elif answer == "games":
-            print(user.ownedGames(target))
+            print(steam.ownedGames(target))
         elif answer == "achie":
-            print(user.achievements(target))
+            appID = input("Insert the appID (found on the url of game's store page):")
+            print(steam.achievements(target, appID))
         elif answer == "friends":
-            print(user.friends(target))
+            print(steam.friends(target))
         elif answer == "recpl":
-            print(user.recenlyPlayed(target))
+            print(steam.recenlyPlayed(target))
         elif answer == "stats":
-            print(user.statsGame(target))
+            print(steam.statsGame(target))
         elif answer == "list":
             printMenu()
         elif answer == "exit":

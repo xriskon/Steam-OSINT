@@ -1,14 +1,13 @@
 import requests
 import json
 from prettytable import PrettyTable
-from bs4 import BeautifulSoup
 
 key = "CBEBD2AF8F17879A8FEE29F695F6BD9A"
 
 
 def ownedGames(user):
     response = requests.get(f"http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key={key}&steamid={user}&format=json&include_appinfo=true&76561198111662340")
-    if exists(user):
+    if userExists(user):
         data = response.json()["response"]
         with open("out.json", "w", encoding="utf8") as f:
             json.dump(data, fp=f, indent=4)
@@ -27,6 +26,10 @@ def ownedGames(user):
 
 def achievements(user, game):
     response = requests.get(f"http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid={game}&key={key}&steamid={user}")
+
+    with open("output\out.json", "w", encoding="utf8") as f:
+        json.dump(response.json(), fp=f, indent=4)
+    return 1
 
 
 def summary(user):
@@ -71,7 +74,7 @@ def recenlyPlayed(user):
     return table
 
 
-def exists(userID):
+def userExists(userID):
     response = requests.get(f"http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={key}&steamids={userID}")
     if response.status_code != 200:
         return False
