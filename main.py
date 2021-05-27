@@ -1,48 +1,60 @@
-import os
-import json
-import requests
-import user
+import sys
+import source.user as user
 
-apiKey = "CBEBD2AF8F17879A8FEE29F695F6BD9A"
+if len(sys.argv) == 1 or len(sys.argv) > 2:
+    print("Required argument: username" if len(sys.argv) == 1 else "Only one username can be parsed at a time")
+    exit(1)
 
 
 def main():
-    target = ''
+    target = sys.argv[1]
+    personName = user.getName(target)
+    print("Steam OSINT ####### created by Chris")
+    print(f"Target: {personName}")
+    printMenu()
     while True:
-        print("Steam OSINT ####### created by Chris")
-
-        # CHECK FOR USER
-        if target == '':
-            print("No valid user")
-            answer = input("Please insert target user ID:")
-            if requests.get(f"https://steamcommunity.com/id/{answer}").status_code != 200:
-                continue
-            else:
-                target = answer
-
-        print(f"Target: {target}")
-        print("-user: Change target user")
-        print("-sum: Show target's summary")
-        print("-games: Show target's owned games")
-        print("-achie: Show target's achievements")
-        print("-friends: Show target's friends list")
-        print("-recpl: Show target's recently played games")
-        print("-stats: Show target's game stats (must provide game ID)")
         answer = input("New command:")
+
         if answer == "user":
-            pass
+            target = changeUser()
         elif answer == "sum":
-            user.summary(target)
+            print(user.summary(target))
         elif answer == "games":
-            user.ownedGames(target)
+            print(user.ownedGames(target))
         elif answer == "achie":
-            user.achievements(target)
+            print(user.achievements(target))
         elif answer == "friends":
-            user.friendList(target)
+            print(user.friends(target))
         elif answer == "recpl":
-            user.recenlyPlayed(target)
+            print(user.recenlyPlayed(target))
         elif answer == "stats":
-            user.statsGame(target)
+            print(user.statsGame(target))
+        elif answer == "list":
+            printMenu()
+        elif answer == "exit":
+            print("Ok, Bye!")
+            exit(0)
+        else:
+            print("Unknown command")
+
+
+def changeUser():
+    answer = input("Enter target's steamID64:")
+    # VERIFY USER EXISTS
+    # IF INPUT IS USERS UNIQUE URL FIND STEAMID64 FROM IT
+    return answer
+
+
+def printMenu():
+    print("[user] ---- Change target user")
+    print("[sum] ----- Show target's summary")
+    print("[games] --- Show target's owned games")
+    print("[achie] --- Show target's achievements")
+    print("[friends] - Show target's friends list")
+    print("[recpl] --- Show target's recently played games")
+    print("[stats] --- Show target's game stats (must provide game ID)")
+    print("[list] ---- Show command list")
+    print("[exit] ---- Exit the application\n")
 
 
 if __name__ == '__main__':
