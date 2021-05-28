@@ -1,61 +1,121 @@
 import sys
-import source.steam as steam
+import requests
+import xmltodict
+import json
+from xml.etree import ElementTree
+from source.steam import User
+from source.steam import App
 
-if len(sys.argv) == 1 or len(sys.argv) > 2:
-    print("Required argument: username" if len(sys.argv) == 1 else "Only one username can be parsed at a time")
-    exit(1)
+
+def changeMode():
+    global mode
+    print("Choose mode")
+    print("[1] User")
+    print("[2] App")
+    while True:
+        _mode = input("?")
+        if _mode == '1' or _mode == '2':
+            mode = _mode
+            break
+
+
+with open("artwork.txt", "r", encoding="utf8") as artwork:
+    print(artwork.read())
+print("Created by Chris Konstantopoulos\n")
+mode = ''
+changeMode()
 
 
 def main():
-    target = sys.argv[1]
-    personName = steam.getName(target)
-    print("Steam OSINT ####### created by Chris")
-    print(f"Target: {personName}")
-    printMenu()
-    while True:
-        answer = input("New command:")
+    global mode
+    if mode == '1':
+        user = User()
 
-        if answer == "user":
-            target = changeUser()
-        elif answer == "sum":
-            print(steam.summary(target))
-        elif answer == "games":
-            print(steam.ownedGames(target))
-        elif answer == "achie":
-            appID = input("Insert the appID (found on the url of game's store page):")
-            print(steam.achievements(target, appID))
-        elif answer == "friends":
-            print(steam.friends(target))
-        elif answer == "recpl":
-            print(steam.recenlyPlayed(target))
-        elif answer == "stats":
-            print(steam.statsGame(target))
-        elif answer == "list":
-            printMenu()
-        elif answer == "exit":
-            print("Ok, Bye!")
-            exit(0)
-        else:
-            print("Unknown command")
+        userMenu()
+        while True:
+            command = input("New command: ")
+            if command == "user":
+                pass
+            elif command == "summ":
+                result = user.summary()
+            elif command == "games":
+                pass
+            elif command == "achie":
+                appID = input("Insert appID\n?")
+            elif command == "friends":
+                result = user.friendsList()
+            elif command == "recpl":
+                pass
+            elif command == "stats":
+                appID = input("Insert appID\n?")
+            elif command == "FILE=y":
+                pass
+            elif command == "FILE=n":
+                pass
+            elif command == "list":
+                pass
+            elif command == "mode":
+                changeMode()
+                main()
+            elif command == "exit":
+                print("Ok, Bye!")
+                exit(0)
+            else:
+                print("Unknown command")
+                continue
+            print(result)
+    else:
+        app = App()
+        app.setAppID()
+        appMenu()
+        while True:
+            command = input("New command: ")
+            if command == "app":
+                app.setAppID()
+            elif command == "news":
+                pass
+            elif command == "achi":
+                pass
+            elif command == "FILE=y":
+                pass
+            elif command == "FILE=n":
+                pass
+            if command == "list":
+                pass
+            elif command == "mode":
+                changeMode()
+                main()
+            elif command == "exit":
+                print("Ok, Bye!")
+                exit(0)
+            else:
+                print("Unknown command")
 
 
-def changeUser():
-    answer = input("Enter target's steamID64:")
-    # VERIFY USER EXISTS
-    # IF INPUT IS USERS UNIQUE URL FIND STEAMID64 FROM IT
-    return answer
+def userMenu():
+    print("[user] Change target user")
+    print("[summ] Show target's summary")
+    print("[games] Show target's owned games")
+    print("[achi] Show target's achievements")
+    print("[friends] Show target's friends list")
+    print("[recpl] Show target's recently played games")
+    print("[stats] Show target's game stats (must provide game ID)")
+    print("[FILE=y] Enable saving to output folder")
+    print("[FILE=n] Disable saving to output folder")
+    print("[list]  Show command list")
+    print("[mode] Change mode")
+    print("[exit] Exit the application\n")
 
 
-def printMenu():
-    print("[user] ---- Change target user")
-    print("[sum] ----- Show target's summary")
-    print("[games] --- Show target's owned games")
-    print("[achie] --- Show target's achievements")
-    print("[friends] - Show target's friends list")
-    print("[recpl] --- Show target's recently played games")
-    print("[stats] --- Show target's game stats (must provide game ID)")
-    print("[list] ---- Show command list")
-    print("[exit] ---- Exit the application\n")
+def appMenu():
+    print("[app] Change target app")
+    print("[news] Get latest news")
+    print("[achi] Get global achievements")
+    print("[FILE=y] Enable saving to output folder")
+    print("[FILE=n] Disable saving to output folder")
+    print("[list] Show all commands")
+    print("[mode] Change mode")
+    print("[exit] Exit the application\n")
 
 
 if __name__ == '__main__':
