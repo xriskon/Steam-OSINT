@@ -5,15 +5,15 @@ import xmltodict
 invalidCharacters = ['/', '<', '>', ':', '"', '/', '\\', '|', '?', '*']
 
 
-def printFriends():
+def friends():
     pass
 
 
-def printGames():
+def games():
     pass
 
 
-def searchUser(user):
+def search(user):
     response = requests.get(f"https://steamcommunity.com/profiles/{user}/?xml=1")
     data = xmltodict.parse(response.content)
     if "response" in data:
