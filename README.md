@@ -8,7 +8,7 @@
 An OSINT tool based on Steam API
 
 <p align="center">
-<img align="center" src=".images/banner.svg" width="900">
+<img align="center" src=".images/banner.png">
 </p>
 
 Disclaimer: **FOR EDUCATIONAL PURPOSE ONLY! The contributors do not assume any responsibility for the use of this tool.**
