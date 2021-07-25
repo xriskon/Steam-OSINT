@@ -1,16 +1,14 @@
 # Steam-OSINT
 
-An OSINT tool based on Steam API
-
-<p align="center">
-<img align="center" src=".images/banner.png">
-</p>
-
 <p align="center">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xriskon/Steam-OSINT">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/xriskon/Steam-OSINT">
-<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/xriskon/Steam-OSINT">
+<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/xriskon/Steam-OSINT?color=orange">
 <img alt="GitHub" src="https://img.shields.io/github/license/xriskon/Steam-OSINT">
+</p>
+
+<p align="center">
+<img align="center" src=".images/banner.png">
 </p>
 
 Disclaimer: **FOR EDUCATIONAL PURPOSE ONLY! The contributors do not assume any responsibility for the use of this tool.**
