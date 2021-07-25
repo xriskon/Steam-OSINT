@@ -1,4 +1,4 @@
-# Steam-OSINT
+# Steam OSINT
 
 <p align="center">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xriskon/Steam-OSINT">
