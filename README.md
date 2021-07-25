@@ -4,7 +4,7 @@
 
 An OSINT tool based on Steam API
 
-![](D:\Projects\Python\Steam-OSINT\.images\banner.svg)
+![](.images\banner.svg)
 
 Disclaimer: **FOR EDUCATIONAL PURPOSE ONLY! The contributors do not assume any responsibility for the use of this tool.**
 
