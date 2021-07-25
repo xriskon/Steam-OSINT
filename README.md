@@ -1,15 +1,10 @@
 # Steam-OSINT
 
-![GitHub last commit](https://img.shields.io/github/last-commit/xriskon/Steam-OSINT)
-![GitHub repo size](https://img.shields.io/github/repo-size/xriskon/Steam-OSINT)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/xriskon/Steam-OSINT?color=orange)
-![GitHub](https://img.shields.io/github/license/xriskon/Steam-OSINT)
+![GitHub last commit](https://img.shields.io/github/last-commit/xriskon/Steam-OSINT) ![GitHub repo size](https://img.shields.io/github/repo-size/xriskon/Steam-OSINT) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/xriskon/Steam-OSINT?color=orange) ![GitHub](https://img.shields.io/github/license/xriskon/Steam-OSINT)
 
 An OSINT tool based on Steam API
 
-<p align="center">
-<img align="center" src=".images/banner.svg" width="900">
-</p>
+![](D:\Projects\Python\Steam-OSINT\.images\banner.svg)
 
 Disclaimer: **FOR EDUCATIONAL PURPOSE ONLY! The contributors do not assume any responsibility for the use of this tool.**
 
