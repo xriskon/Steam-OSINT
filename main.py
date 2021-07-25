@@ -11,13 +11,14 @@ def print_logo():
 
 
 def command_list():
-    print("[propic]\tDownload profile picture")
-    print("[info]\t\tDisplay summary of user")
-    print("[friends]\tDisplay all friends")
-    print("[recpl]\t\tDisplay recently played games")
-    print("[games]\t\tDisplay all owned games")
-    print("[list]\t\tShow command list")
-    print("[quit]\t\tExit program")
+    print("[target]\tchange target user")
+    print("[info]\t\tdisplay summary of user")
+    print("[friends]\tdisplay all friends")
+    print("[games]\t\tdisplay all owned games")
+    print("[list]\t\tshow command list")
+    print("[quit]\t\texit program")
+    print("[FILE=y]\tenable saving to file")
+    print("[FILE=n]\tdisable saving to file")
 
 
 def _quit():
@@ -33,30 +34,25 @@ args = vars(parser.parse_args())
 api = Steam(args.get("id"), args.get("output"))
 
 commands = {
-    'list':     command_list,
-    'help':     command_list,
-    'quit':     _quit,
-    'exit':     _quit,
-    'propic':   api.get_profile_picture,
-    'info':     api.get_info,
-    'friends':  api.get_friends_list,
-    "recpl":    api.get_recently_played,
-    'games':    api.get_owned_games
+    'TARGET':   api.change_target,
+    'LIST':     command_list,
+    'HELP':     command_list,
+    'QUIT':     _quit,
+    'EXIT':     _quit,
+    'INFO':     api.get_info,
+    'FRIENDS':  api.get_friends_list,
+    'GAMES':    api.get_owned_games
 }
 
 
 print_logo()
 api.print_banner()
 while True:
-    cmd = input("New command:")
+    cmd = input("New command:").upper()
     _cmd = commands.get(cmd)
 
     if _cmd:
         _cmd()
-    elif cmd.upper() == "FILE=Y":
-        api.set_write_file(True)
-    elif cmd.upper() == "FILE=Y":
-        api.set_write_file(False)
     elif cmd == "":
         print("")
     else:
