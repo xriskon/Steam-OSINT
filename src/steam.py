@@ -1,9 +1,9 @@
 from src import config
 from prettytable import PrettyTable
 import xmltodict
-# import xlsxwriter
 import requests
 import sys
+import os
 
 
 class Steam:
@@ -75,6 +75,13 @@ class Steam:
         else:
             print("User was not found")
 
+    def set_write_file(self, flag):
+        if flag:
+            print("Writing to file ENABLED")
+        else:
+            print("Writing to file DISABLED")
+        self.write_file = flag
+
     def set_target(self, data):
         self.steamID = data.get("steamID")
         self.steamID64 = data.get("steamID64")
@@ -94,7 +101,9 @@ class Steam:
         result = f"SteamID64: {data['steamID64']}\nCustomURL: {data['customURL']}\nUsername: {data['steamID']}\nReal Name: {data['realname']}\n" \
                  f"Location: {data['location']}\nVac Ban: {data['vacBanned']}\nTrade Ban: {data['tradeBanState']}\nOnline State: {data['onlineState']}\n" \
                  f"Privacy State: {data['privacyState']}\nMemberSince: {data['memberSince']}"
+
         print(result)
+        self.write_to_file(result, "info.txt")
 
     def get_friends_list(self):
         response = requests.get(f"http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key={self.api}&steamid={self.steamID64}&relationship=friend")
@@ -118,6 +127,7 @@ class Steam:
                            _user["response"]["players"][0]["personastate"], friend["friend_since"]])
 
         print(table)
+        self.write_to_file(str(table), "friends_list.txt")
 
     def get_owned_games(self):
         response = requests.get(f"http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key={self.api}&steamid={self.steamID64}&format=json&include_appinfo=true")
@@ -127,15 +137,14 @@ class Steam:
         for game in data:
             table.add_row([game["appid"], game["name"], game["playtime_forever"]])
         print(table)
+        self.write_to_file(str(table), "owned_games.txt")
 
-    # TODO: ADD ABILITY TO EXPORT DATA IN EXCEL FILE
-    # Sample code below
-    # workbook = xlsxwriter.Workbook("output/info.xlsx")
-    # worksheet = workbook.add_worksheet()
-    # worksheet.set_column('A:A', 20)
-    # bold = workbook.add_format({'bold': True})
-    # worksheet.write('A1', 'Hello')
-    # worksheet.write('B2', 'World', bold)
-    # worksheet.write(2, 0, 123)
-    # worksheet.write(3, 0, 123.456)
-    # workbook.close()
+    def write_to_file(self, content, filename):
+        if self.write_file:
+            path = f"output/{self.steamID64}_{self.steamID}"
+            try:
+                os.makedirs(path)
+            except OSError as e:
+                pass
+            with open(path + '/' + filename, "w", encoding="utf8") as file:
+                file.write(content)
