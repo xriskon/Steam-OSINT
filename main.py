@@ -53,6 +53,10 @@ while True:
 
     if _cmd:
         _cmd()
+    elif cmd == "FILE=Y":
+        api.set_write_file(True)
+    elif cmd == "FILE=N":
+        api.set_write_file(False)
     elif cmd == "":
         print("")
     else:

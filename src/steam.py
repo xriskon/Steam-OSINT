@@ -68,12 +68,12 @@ class Steam:
             print(f'{self.steamID64} - {self.steamID} [PUBLIC ACCOUNT]')
 
     def change_target(self):
-        _user = input("New target: ")
+        _user = input("New target custom URL/steamid64: ")
         data = self.__search_user(_user)
         if data.get("found"):
             self.set_target(data)
         else:
-            print("User was not found")
+            print("User couldn't not be found")
 
     def set_write_file(self, flag):
         if flag:
@@ -91,15 +91,15 @@ class Steam:
         response = requests.get(f"https://steamcommunity.com/profiles/{self.steamID64}/?xml=1")
         data = xmltodict.parse(response.content)["profile"]
         if not ("customURL" in data):
-            data["customURL"] = "None"
+            data["customURL"] = "N/A"
         if not ("realname" in data):
-            data["realname"] = "None"
+            data["realname"] = "N/A"
         if not ("location" in data):
-            data["location"] = "None"
+            data["location"] = "N/A"
         if not ("memberSince" in data):
-            data["memberSince"] = "None"
+            data["memberSince"] = "N/A"
         result = f"SteamID64: {data['steamID64']}\nCustomURL: {data['customURL']}\nUsername: {data['steamID']}\nReal Name: {data['realname']}\n" \
-                 f"Location: {data['location']}\nVac Ban: {data['vacBanned']}\nTrade Ban: {data['tradeBanState']}\nOnline State: {data['onlineState']}\n" \
+                 f"Location: {data['location']}\nVAC Ban: {data['vacBanned']}\nTrade Ban: {data['tradeBanState']}\nOnline State: {data['onlineState']}\n" \
                  f"Privacy State: {data['privacyState']}\nMemberSince: {data['memberSince']}"
 
         print(result)
@@ -123,8 +123,7 @@ class Steam:
             else:
                 _user["response"]["players"][0]["personastate"] = "Offline"
 
-            table.add_row([friend["steamid"], _user["response"]["players"][0]["personaname"],
-                           _user["response"]["players"][0]["personastate"], friend["friend_since"]])
+            table.add_row([friend["steamid"], _user["response"]["players"][0]["personaname"], _user["response"]["players"][0]["personastate"], friend["friend_since"]])
 
         print(table)
         self.write_to_file(str(table), "friends_list.txt")
