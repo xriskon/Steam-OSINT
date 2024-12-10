@@ -1,5 +1,5 @@
 argparse~=1.4.0
-requests~=2.31.0
+requests~=2.32.0
 xmltodict~=0.12.0
 xlsxwriter~=1.4.4
 prettytable~=2.1.0
